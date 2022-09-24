@@ -84,4 +84,31 @@ int main(void)
 	return 0;
 }
 
-----------------------------------------------------------<문제3>
+----------------------------------------------------------<문제4>
+#include <iostream>
+
+int main(void)
+{
+	int base = 50, n, ans;
+	bool bFinish = false;
+	while(!bFinish)
+	{
+		std::cout<<"판매 금액을 만원 단위로 입력(-1 to end): ";
+		std::cin>>n;
+		
+		if (n=-1)
+		{
+			std::cout<<"프로그램을 종료합니다.";
+			bFinish = true;
+		}
+		
+		else
+		{
+			ans = base + (n*0.12);
+			std::cout<<"이번 달 급여 :"<<ans<<"만원"<<std::endl;
+		}
+	}
+	return 0;
+}
+
+----------------------------------------------------------<문제4>
